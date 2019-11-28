@@ -31,10 +31,16 @@ public:
 		cout << "Resume 被析构" << this->name<< endl;
 		delete work_experince_p;
 	}
-
+	// Resume(const Resume& res): work_experince_p(res.work_experince_p)
+	// {
+	// 	cout << "调用拷贝构造函数" << endl;
+	// 	// res.work_experince = new WorkExperince();
+	// 	
+	// }
 
 public:
 	WorkExperince* work_experince_p;
+
 	WorkExperince work_experince;
 	string name;
 	string sex;

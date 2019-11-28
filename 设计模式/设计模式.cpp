@@ -2,19 +2,62 @@
 //
 
 #include <iostream>
+#include <list>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::list< int> List;
+	List.push_back(1);
+	List.push_back(12);
+	List.push_back(13);
+
+	// std::list< int>::iterator itList;
+	// for ( auto value : List)
+	// {
+	// 	// itList = List.begin();
+	// 	std::cout << value << std::endl;;
+	// 	if (value==12)
+	// 	{
+	// 		List.erase()
+	// 	}
+	// 	std::cout << value << std::endl;;
+	// }
+	std::list< int>::iterator itList;
+	itList = List.end();
+	for (auto it = List.begin(); it!= List.end();++it )
+	{
+		
+		if (*it ==15)
+		{
+			itList = it;
+			break;
+		}
+		
+		// std::cout << *it << std::endl;
+	}
+	if (itList!=List.end())
+	{
+		List.erase(itList);
+	}
+	
+	for (auto value : List)
+	{
+		std::cout << value << std::endl;
+	}
+	std::cout << List.size()<<std::endl;
+
+
+	auto mem = std::find(List.begin(), List.end(), 19);
+	if (mem==List.end())
+	{
+		std::cout << "没有找到" << std::endl;
+	}
+	else
+	{
+		std::cout << "找到" << std::endl;
+		
+	}
+   
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
 
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件

@@ -15,28 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="原型模式.cpp">
+    <ClCompile Include="模板方法模式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Resume.cpp">
+    <ClCompile Include="CaffeineBeverage.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="prototype.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="concrete_prototype.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Resume.h">
+    <ClInclude Include="CaffeineBeverage.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="原型模式.md" />
+    <None Include="模板方法.md" />
   </ItemGroup>
 </Project>
