@@ -6,7 +6,7 @@ using namespace std;
 TEST(TestCaseName, TestName)
 {
 	EXPECT_EQ(1, 1);
-	EXPECT_TRUE(true);
+
 }
 
 class report
@@ -110,7 +110,7 @@ void fun(int i)
 
 TEST(—≠ª∑≤‚ ‘, ≤‚ ‘for)
 {
-	int a[] = {1, 2, 3, 4};
+	int a[] = { 1, 2, 3, 4 };
 	vector<int> v(a, a + sizeof(a) / sizeof(int));
 	for_each(v.begin(), v.end(), fun);
 	for_each(v.begin(), v.end(), [](int i)-> void { cout << i << " "; });
@@ -123,11 +123,11 @@ TEST(ƒ‰√˚∫Ø ˝, 1)
 	int a;
 	int b = 7;
 	int c = 4;
-	auto my_lambda_func = [b,c](int x, int y)->int
+	auto my_lambda_func = [b, c](int x, int y)->int
 	{
 		cout << b << endl;
 		int z = x + y; return z;
 	};
-	cout << my_lambda_func(1,3) << endl;
+	cout << my_lambda_func(1, 3) << endl;
 
 }
