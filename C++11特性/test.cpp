@@ -126,7 +126,8 @@ TEST(ÄäÃûº¯Êı, 1)
 	auto my_lambda_func = [b, c](int x, int y)->int
 	{
 		cout << b << endl;
-		int z = x + y; return z;
+		int z = x + y;
+		return z;
 	};
 	cout << my_lambda_func(1, 3) << endl;
 
