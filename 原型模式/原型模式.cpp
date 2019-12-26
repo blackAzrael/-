@@ -10,7 +10,6 @@ using namespace std;
 int main()
 {
 
-
 	Resume* resume = new  Resume("resume");
 
 	resume->sex = "男";
@@ -31,7 +30,7 @@ int main()
 	resume3->name = "resume3";
 	// resume3->work_experince_p->work_time = "20177999";
 	// resume3->work_experince_p->work_addr = "555";
-	resume3->set_work("201033", "3333366663");
+	resume3->set_work("201033", "333336666652223");
 	// resume3->name = "4444";
 
 	
